@@ -9,7 +9,7 @@ box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
   font-size: 24px;
-  font: "helvetica";
+  font: "verdana";
 }
 
 .side {
@@ -19,7 +19,7 @@ box-sizing: border-box;
   float: left;
   padding: 15px;
   text-align: center;
-  font: "helvetica";
+  font: "Verdana";
 }
 
 .main {
@@ -27,5 +27,5 @@ box-sizing: border-box;
   width: 75%;
   float: left;
   padding: 15px;
-  font: "helvetica";
+  font: "Verdana";
 }
