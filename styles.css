@@ -3,13 +3,13 @@ box-sizing: border-box;
 }
 
 .banner {
-  background-color: 84AFDB#;
-  color: 013C51#;
+  background-color: #84AFDB;
+  color: #013C51;
+  width: 100%;
   padding: 20px;
-  margin-left: auto;
-  margin-right: auto;
   font-size: 24px;
   font-family: "Verdana";
+  text-align: center;
 }
 
 .side {
