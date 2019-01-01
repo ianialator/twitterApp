@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Follower Finder</title>
+  <title>Follower Finder</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Page Title</title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script src="script.js"></script>
 </head>
 
 <body>
@@ -19,17 +18,22 @@
   
   <div class="side">
     <h4>Intersesting User</h4>
-    <form action="">
+    <form id="nameAdder" action="">
       <input type="text" name="username" value="@example"> <br>
-      <input type="submit" value="Add">
+      <input id="username" type="submit" value="Add">
     </form>
-    <ol>
-    </ol>
+    <ul>
+    </ul>
   </div>
   
   <div class="main">
   </div>
   
+  <script>
+    $("#nameAdder").submit(function(event){
+      $("ul").append(this);
+    });
+  </script>
 </body>
 
 </html>
