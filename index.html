@@ -22,7 +22,7 @@
       <input id="username" type="text" name="username" value="@example"> <br>
       <input type="submit" value="Add">
     </form>
-    <ul>
+    <ul id="coolUsers">
     </ul>
   </div>
   
@@ -30,9 +30,12 @@
   </div>
   
   <script>
-    $("#nameAdder").submit(function(event){
-      $("ul").append(this);
+    $("#nameAdder").submit(function(){
+      $("#coolUsers").append(this);
     });
+    
+    
+    $('.student-list').append($newStudent);
   </script>
 </body>
 
