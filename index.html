@@ -15,27 +15,31 @@
     <img src="" width="50" height="50"> </img>
     <h2>My Username</h2>
   </div>
-  
+
   <div class="side">
     <h4>Intersesting User</h4>
     <form id="nameAdder" action="">
-      <input id="username" type="text" name="username" value="@example"> <br>
+      <input id="username" type="text"> <br>
       <input type="submit" value="Add">
     </form>
     <ul id="coolUsers">
     </ul>
   </div>
-  
+
   <div class="main">
   </div>
-  
+
   <script>
+    const meName = "MY NAME"
     $("#nameAdder").submit(function(){
-      $("#coolUsers").append(this);
+      var newIdol= $("#username").value;
+      var newItem= "<li>" + newIdol + "</li>;"
+      document.getElementById("coolUsers").appendChild("newItem");
+
+
     });
-    
-    
-    $('.student-list').append($newStudent);
+
+
   </script>
 </body>
 
